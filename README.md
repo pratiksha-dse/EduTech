@@ -14,5 +14,6 @@ Instruction to run code-
 * know.css
 * practice.css
 * some image folders..
+* And open index.html file in a browser.
 Credits-
-Code with harry
+Code with harry youtube videos.

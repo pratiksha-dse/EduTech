@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta chrset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Frosthack</title>
+    <link rel="stylesheet" href="know.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .main {
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("bg.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: rgba(1, 72, 119, 0.333);
+
+
+        }
+
+        #para {
+            text-align: center;
+            font-size: 80px;
+            color: #0e3742;
+            margin-top: 50px;
+            padding-top: 300px;
+            background-color: #0005;
+            position: relative;
+            letter-spacing: 15px;
+            text-transform: none;
+            -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+            line-height: 0.7em;
+            outline: none;
+            animation: animate 5s linear infinite;
+
+        }
+
+        @keyframes animate {
+
+            0%,
+            18%,
+            20%,
+            50.1%,
+            60%,
+            65.1%,
+            80%,
+            90.1%,
+            92% {
+                color: #0e3742;
+                box-shadow: none;
+            }
+
+            18.1%,
+            20.1%,
+            30%,
+            50%,
+            60.1%,
+            65%,
+            80.1%,
+            90%,
+            92.1%,
+            100% {
+                color: #fff;
+                text-shadow: 0 0 10px #03bcf4,
+                    0 0 20px #03bcf4,
+                    0 0 40px #03bcf4,
+                    0 0 80px #03bcf4,
+                    0 0 160px #03bcf4;
+            }
+        }
+
+        .navbar {
+            background-color: #094263;
+            width: 100%;
+            /*border-radius: 30px;*/
+            height: 100px;
+            font-size: 1.25rem;
+            position: fixed;
+            top: 0.5px;
+            z-index: 10;
+            display: flex;
+
+            /*display: block;*/
+        }
+
+        .navbar ul {
+            float: right;
+        }
+
+        .navbar ul li {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            list-style: none;
+            display: inline-block;
+            margin-top: 18px;
+            padding: 18px;
+        }
+
+        .navbar ul li a {
+            padding: 11px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar li a:hover,
+        li a:active {
+            color: orangered;
+
+        }
+
+        .compete {
+            height: 300px;
+            width: 100%;
+        }
+
+        .size {
+
+            border-image-width: 80px;
+            height: 300px;
+            width: 300px;
+        }
+
+        .card-title text-center {
+            display: inline-block;
+            box-sizing: border-box;
+            height: 50px;
+            width: 50px;
+
+        }
+
+        #Programming {
+
+            background: url("img cl/clbg.jpeg") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            height: 400px;
+
+        }
+
+        #DSA {
+            height: 400px;
+        }
+        #pract {
+            height: 500px;
+        }
+        #contact Us{
+            height:200px;
+        }
+
+        .heading1 {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 35px;
+            margin: 90px;
+            Padding: 15px;
+            text-align: center;
+            display: block;
+        }
+
+        .heading2 {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 35px;
+            margin: 70px;
+            Padding: 15px;
+            text-align: center;
+            display: block;
+        }
+
+        .navhead {
+            color: white;
+            width: 100%;
+            height: 800px;
+            display: block;
+        }
+
+        .navhead1 {
+            color: white;
+            width: 100%;
+            height: 350px;
+            display: block;
+        }
+
+        .navhead1 p {
+            font-family: 'Rubik', sans-serif;
+            border: 5px solid black;
+            border-radius: 20px;
+            background: rgb(215, 239, 259);
+            width: 90%;
+            margin: auto;
+            color: #0c5580;
+            font-size: 30px;
+            font-weight:"bold";
+            line-height: 1.6;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding-left: 100px;
+            padding-right: 100px;
+            text-align: justify;
+            box-sizing: border-box;
+        }
+        .navhead1 p:hover{
+            text-shadow: brown;
+        }
+
+        .first figure {
+            height: 100px;
+        }
+
+        .first img:hover {
+            transform: scale(1.1);
+        }
+
+        .first h1 {
+            text-align: center;
+        }
+
+        .first img {
+            margin-top: 20px;
+            border-width: 20px;
+            border-radius: 80px;
+            border-color: red;
+
+        }
+
+        .first {
+            float: left;
+            width: 20%;
+            height: 280px;
+            padding-right: 50px;
+            padding-top: 15px;
+        }
+
+        .second figure {
+            height: 40px;
+        }
+
+        .second img:hover {
+            transform: scale(1.1);
+        }
+
+        .second h1 {
+            text-align: center;
+        }
+
+        .second img {
+            margin-top: 20px;
+            border-width: 20px;
+            border-radius: 80px;
+            border-color: red;
+
+        }
+
+        .second {
+            float: left;
+            width: 20%;
+            height: 280px;
+            padding-right: 50px;
+            padding-top: 15px;
+            padding-left: 50px;
+        }
+
+        .fourth figure {
+            height: 40px;
+        }
+
+        .fourth img:hover {
+            transform: scale(1.1);
+        }
+
+        .fourth h1 {
+            text-align: center;
+        }
+
+        .fourth img {
+            margin-top: 20px;
+            height: 35;
+            width: 35;
+            border-width: 20px;
+            border-radius: 80px;
+
+        }
+
+        .fourth {
+            float: right;
+            width: 20%;
+            height: 280px;
+            padding-top: 15px;
+            padding-left: 50px;
+            padding-right: 50px;
+
+        }
+
+        .third figure {
+            height: 40px;
+        }
+
+        .third img:hover {
+            transform: scale(1.1);
+        }
+
+        .third h1 {
+            text-align: center;
+        }
+
+        .third img {
+            margin-top: 20px;
+            height: 35;
+            width: 35;
+            border-width: 20px;
+            border-radius: 80px;
+
+        }
+
+        .third {
+
+            float: right;
+            width: 20%;
+            height: 280px;
+            padding-left: 50px;
+            padding-top: 15px;
+
+        }
+
+        #DSA {
+            background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("img cl/clbg.jpeg") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            border-image-width: 400px;
+
+        }
+
+        #Compete {
+
+
+            background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("img tech/techbg.jpg") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+
+        }
+
+
+        .left img:hover {
+            transform: scale(1.1);
+        }
+        .left img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            padding-top: 50px;
+        }
+
+        #Skills {
+            background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("img tech/techbg.jpg") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+
+        }
+
+        .subpara {
+            width: 80%;
+            margin: 30px;
+            font-size: 20px;
+            color: rgb(61, 61, 63);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        #About {
+
+            padding: 0px
+            
+        }
+
+        .ourimg {
+            display: inline-flexbox;
+        }
+
+        .ourimg {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            border-width: 10px;
+            border-image-width: dark;
+            margin-left: 60px;
+            margin-right: 60px;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        .row {
+            box-sizing: border-box;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        .column {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 8px;
+            padding: 15px 8px;
+            box-sizing: border-box;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgb(17, 48, 77);
+            margin-left: 75px;
+            margin-right: 75px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+
+        }
+
+        .about-section {
+            padding: 50px;
+            text-align: center;
+            background-color: white;
+            color: black;
+        }
+
+        .container {
+            padding: 0 16px;
+        }
+
+        .container::after,
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .container h2 {
+            text-align: center;
+        }
+
+        .title {
+            color: grey;
+        }
+
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+      
+        .button:hover {
+            background-color: #555;
+        }
+
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+
+        .contact h1 {
+            font-size: 3em;
+        }
+        
+
+        .n h1 {
+            font-size: 70px;
+        }
+        .social{
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="Home">
+
+        <section class="main">
+
+            <nav class="navbar">
+
+                <div>
+                    <ul>
+                        <li><a href="#Home" class="nav-link" class="active">Home</a>
+                        </li>
+                        <li><a href="#About" class="nav-link" class="active">About</a>
+                        </li>
+                        <li><a href="#program" class="nav-link" class="active">Programming
+                                Languages</a>
+                        </li>
+                        <li><a href="#dsa" class="nav-link">Data
+                                Structure & Algorithms</a>
+
+                        </li>
+                        <li><a href="#practice" class="nav-link">Practice and
+                                Compete</a>
+
+                        </li>
+                        <li><a href="#other" class="nav-link">Other
+                                Technical Skills</a>
+                        </li>
+                        <li><a href="#Contact Us" class="nav-link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <h1 contenteditable="true" id="para">
+                Hey! you're welcome here..
+            </h1>
+        </section>
+    </div>
+    <div id="About"></div>
+    <div class="heading2">
+        <h1>About</h1>
+    </div>
+    <section id="About" class="navhead1">
+        <div>
+            <p>
+                This platform is designed for all those who are craving hard to begin programming .&nbsp; Right from very
+                basics to becoming efficient enough for whatever you aspire, be it web development or android
+                development or anything else, we are here continuously guiding and supporting you.<br>&nbsp;&nbsp;&nbsp;&nbsp; We provide you
+                with numerous articles related to almost any issue that you may face during your journey of programming.
+            </p>
+        </div>
+    </section>
+    <div id="program"></div>
+    <div class="heading1">
+        <h1>Programming Languages</h1>
+    </div>
+    <section id="Programming" class="navhead">
+
+        <div class="imgbox">
+            <div class="first">
+                <h1>C Language</h1>
+                <figure>
+                    <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank">
+                        <img src="img cl/c.jpeg" class="size">
+                    </a>
+                </figure>
+            </div>
+            <div class="second">
+                <h1>C++ Language</h1>
+                <figure>
+                    <a href="https://en.wikipedia.org/wiki/C%2B%2B" target="_blank">
+                        <img src="img cl/c++.jpeg" class="size">
+                    </a>
+                </figure>
+            </div>
+            <div class="third">
+                <h1>Python Language</h1>
+                <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank">
+                    <img src="img cl/python.jpeg" class="size">
+                </a>
+
+            </div>
+            <div class="fourth">
+                <h1>Java Language</h1>
+                <figure>
+                    <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank">
+                        <img src="img cl/java.jpeg" class="size">
+                    </a>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <div id="dsa"></div>
+    <div class="heading2">
+        <h1>Data Structure & Algorithms</h1>
+    </div>
+    <section id="DSA" class="navhead">
+        <div class="imgbox">
+            <div class="left">
+                <figure>
+                    <a href="dsalgo.html" target="_blank">
+                        <img src="img DSA/dsa.png" class="size">
+                    </a>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <div id="practice"></div>
+    <div class="heading2">
+        <h1>Practice and Compete</h1>
+    </div>
+    <section id="Compete" class="navhead">
+
+        <div class="imgbox">
+            <div class="know-9">
+                <h1>Codechef</h1>
+                <figure>
+                    <a href="https://www.codechef.com/" target="_blank">
+                        <img src="img compete/codechef.jpeg" class="size">
+                    </a>
+                </figure>
+            </div>
+            <div class="know-7">
+                <h1>Hackerearth</h1>
+                <figure>
+                    <a href="https://www.hackerearth.com/" target="_blank">
+                        <img src="img DSA/hackearth.jpeg" class="size">
+                    </a>
+                </figure>
+            </div>
+            <div class="know-3">
+                <h1>HackerRank</h1>
+                <a href="https://www.hackerrank.com/access-account/?h_r=home_v2&h_l=header" target="_blank">
+                    <img src="img DSA/hackerrank.jpeg" class="size">
+                </a>
+
+            </div>
+            <div class="know-8">
+                <h1>LeetCode</h1>
+                <figure>
+                    <a href="https://leetcode.com/" target="_blank">
+                        <img src="img DSA/Leetcode.jpeg" class="size">
+                    </a>
+                </figure>
+            </div>
+            <div class="know-5">
+                <h1>Codeforces</h1>
+                <figure>
+                    <a href="https://codeforces.com/" target="_blank">
+                        <img src="img compete/cf.jpeg" class="size">
+                    </a>
+                </figure>
+            </div>
+            <div class="know-6">
+                <h1>AtCoder</h1>
+                <figure>
+                    <a href="https://atcoder.jp/" target="_blank">
+                        <img src="https://i.imgur.com/jhJ2k25.png" class="size">
+                    </a>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <div id="other"></div>
+    <div class="heading1">
+        <h1>Other Technical Skills</h1>
+    </div>
+    <section id="Skills" class="navhead">
+        <div class="imgbox">
+            <div class="know-1">
+                <h1>Data Science</h1>
+                <figure>
+                    <a href="https://builtin.com/data-science" target="_blank">
+                        <img src="img tech/DS.jpg" class="size">
+                    </a>
+                </figure>
+            </div>
+            <div class="know-2">
+                <h1>Machine Learning</h1>
+                <figure>
+                    <a href="https://www.expert.ai/blog/machine-learning-definition/" target="_blank">
+                        <img src="img tech/ML.jpeg" class="size">
+                    </a>
+                </figure>
+            </div>
+            <div class="know-3">
+                <h1>Web Development</h1>
+                <figure>
+                    <a href="https://blog.openclassrooms.com/en/2018/03/28/web-development-definition/" target="_blank">
+                        <img src="img tech/webdev.png" class="size">
+                    </a>
+                </figure>
+            </div>
+            <div class="know-4">
+                <h1>Android Development</h1>
+                <figure>
+                    <a href="https://hackr.io/tutorials/learn-android-development" target="_blank">
+                        <img src="https://www.kindpng.com/picc/m/396-3964015_android-app-development-vector-hd-png-download.png"
+                            class="size">
+                    </a>
+                </figure>
+            </div>
+            <div class="know-5">
+                <h1>Git/Github</h1>
+                <figure>
+                    <a href="https://youtu.be/gwWKnnCMQ5c" target="_blank">
+                        <img src="https://morinlab.github.io/images/team/github.jpg" class="size">
+                    </a>
+                </figure>
+            </div>
+            <div class="know-6">
+                <h1>Artificial Intelligence</h1>
+                <figure>
+                    <a href="https://builtin.com/artificial-intelligence" target="_blank">
+                        <img src="img tech/AI.jpg" class="size">
+                    </a>
+            </div>
+        </div>
+    </section>
+
+    <div id="Contact Us" class="n">
+        <div class="about-section" class="contact">
+            <h1 class="heading2">Contact Us</h1>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="ourimg/prateeksha.jpeg" alt="Mike" class="size" style="width:100%">
+                    <div class="container">
+                        <h2>Prateeksha Pal</h2>
+
+                        <a href="https://github.com/pratiksha-dse" target="_blank">
+                            <img src="https://p.kindpng.com/picc/s/128-1280192_github-logo-png-github-png-transparent-png.png"
+                                height="40px" width="40px">
+                        </a>
+                        <a href="palpratiksha69@gmail.com" target="_blank">
+                            <img src="social/gmail.png" height="40px" width="50px">
+                        </a>
+                        <a href="https://www.facebook.com/prateeksha.pal.313" target="_blank">
+                            <img src="social/fb.png" height="40px" width="60px">
+                        </a>
+                        <a href="https://www.instagram.com/prateeksha.pal/" target="_blank">
+                            <img src="social/insta.jpeg" height="37px" width="37px">
+                        </a>
+                        <a href="https://instagram.com/clinophile_palak?igshid=1ptcayp76y6e0" target="_blank">
+                            <img src="social/discord.png" height="40px" width="42px">
+                        </a>
+                        <p><button class="button">Contact No:8957742586</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="ourimg/shruti.jpeg" alt="Jane" class="size" style="width:100%">
+                    <div class="container">
+                        <h2>Shruti Jain</h2>
+                        <div class="social">
+                            <a href="https://github.com/Shruti-0925" target="_blank">
+                                <img src="https://p.kindpng.com/picc/s/128-1280192_github-logo-png-github-png-transparent-png.png"
+                                    height="40px" width="40px">
+                            </a>
+                            <a href="shrjain476@gmail.com" target="_blank">
+                                <img src="social/gmail.png" height="40px" width="50px">
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=100056944296464" target="_blank">
+                                <img src="social/fb.png" height="40px" width="60px">
+                            </a>
+                            <a href="https://instagram.com/shrutijain.25?igshid=raxospaj6gss" target="_blank">
+                                <img src="social/insta.jpeg" height="37px" width="37px">
+                            </a>
+                            <a href="https://instagram.com/clinophile_palak?igshid=1ptcayp76y6e0" target="_blank">
+                                <img src="social/discord.png" height="40px" width="42px">
+                            </a>
+                           
+                        </div>
+                        <p><button class="button">Contact No:8839822195</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="ourimg/palak.jpeg" alt="John" class="size" style="width:100%">
+                    <div class="container">
+                        <h2>Palak Sharma</h2>
+                        <a href="https://github.com/palaksharma12" target="_blank">
+                            <img src="https://p.kindpng.com/picc/s/128-1280192_github-logo-png-github-png-transparent-png.png"
+                                height="40px" width="40px">
+                        </a>
+                        <a href="plksharma12@gmail.com" target="_blank">
+                            <img src="social/gmail.png" height="40px" width="50px">
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100057358935941" target="_blank">
+                            <img src="social/fb.png" height="40px" width="60px">
+                        </a>
+                        <a href="https://instagram.com/clinophile_palak?igshid=1ptcayp76y6e0" target="_blank">
+                            <img src="social/insta.jpeg" height="37px" width="37px">
+                        </a>
+                        <a href="https://instagram.com/clinophile_palak?igshid=1ptcayp76y6e0" target="_blank">
+                            <img src="social/discord.png" height="40px" width="42px">
+                        </a>
+                        <p><button class="button">Contact No:8290747574</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+        </div>
+        </section>
+    </div>
+</body>
+
+</html>

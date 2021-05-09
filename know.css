@@ -1,0 +1,247 @@
+       
+        .know-1 img:hover {
+            transform: scale(1.1);
+        }
+
+        .know-1 h1 {
+            color: white;
+            padding-left:78px;
+        }
+
+        .know-1 img {
+            margin-top: 20px;
+            height: 35;
+            width: 35;
+            border-radius: 80px;
+
+        }
+
+        .know-1 {
+            float: left;
+            width: 25%;
+            height: 280px;
+            padding-right: 10px;
+            padding-top: 15px;
+            padding-left: 10px;
+            padding-bottom:70px;
+        }
+        
+
+        .know-2 img:hover {
+            transform: scale(1.1);
+        }
+
+        .know-2 h1 {
+            color: white;
+            padding-left:47px;
+        }
+
+        .know-2 img {
+            margin-top: 20px;
+            height: 35;
+            width: 35;
+            border-radius: 80px;
+
+        }
+
+        .know-2 {
+            float: left;
+            width: 25%;
+            height: 280px;
+            padding-right: 10px;
+            padding-top: 15px;
+            padding-left: 200px;
+            padding-bottom:70px;
+        }
+        
+
+        .know-3 img:hover {
+            transform: scale(1.1);
+        }
+
+        .know-3 h1 {
+            text-align: center;
+            color: white;
+        }
+
+        .know-3 img {
+            margin-top: 20px;
+            height: 35;
+            width: 35;
+            border-radius: 80px;
+
+        }
+
+        .know-3 {
+            float: right;
+            width: 20%;
+            height: 280px;
+            padding-right: 10px;
+            padding-top: 15px;
+            padding-bottom:70px;
+        }
+        
+
+        .know-4 img:hover {
+            transform: scale(1.1);
+        }
+
+        .know-4 h1 {
+            color: white;
+            padding-top:10px;
+            padding-left:31px;
+        }
+
+        .know-4 img {
+            margin-top: 20px;
+            height: 35;
+            width: 35;
+            border-radius: 80px;
+
+        }
+
+        .know-4 {
+            float: left;
+            width: 25%;
+            height: 280px;
+            padding-right: 10px;
+            padding-top: 15px;
+            padding-left: 10px;
+            padding-bottom:10px;
+        }
+        
+
+        .know-5 img:hover {
+            transform: scale(1.1);
+        }
+
+        .know-5 h1 {
+            padding-top:10px;
+            padding-left:90px;
+            color: white ;
+        }
+
+        .know-5 img {
+            margin-top: 20px;
+            height: 35;
+            width: 35;
+            border-radius: 80px;
+
+        }
+
+        .know-5 {
+            float: left;
+            width: 25%;
+            height: 280px;
+            padding-right: 20px;
+            padding-top: 15px;
+            padding-left: 200px;
+            padding-bottom:200px;
+        }
+     
+        .know-6 img:hover {
+            transform: scale(1.1);
+        }
+
+        .know-6 h1 {
+            text-align: center;
+            padding-top:10px;
+            color: white;
+        }
+
+        .know-6 img {
+            margin-top: 20px;
+            height: 35;
+            width: 35;
+            border-radius: 80px;
+
+        }
+
+        .know-6 {
+            float: right;
+            width: 20%;
+            height: 280px;
+            padding-right: 10px;
+            padding-top: 15px;
+            padding-bottom:200px;
+        }
+        .know-7 img:hover {
+            transform: scale(1.1);
+        }
+
+        .know-7 h1 {
+            color: white;
+            padding-left:77px;
+        }
+
+        .know-7 img {
+            margin-top: 20px;
+            height: 35;
+            width: 35;
+            border-radius: 80px;
+
+        }
+
+        .know-7 {
+            float: left;
+            width: 25%;
+            height: 280px;
+            padding-right: 10px;
+            padding-top: 15px;
+            padding-left: 200px;
+            padding-bottom:70px;
+        }
+        .know-8 img:hover {
+            transform: scale(1.1);
+        }
+
+        .know-8 h1 {
+            color: white;
+            padding-top:10px;
+            padding-left:101px;
+        }
+
+        .know-8 img {
+            margin-top: 20px;
+            height: 35;
+            width: 35;
+            border-radius: 80px;
+
+        }
+
+        .know-8 {
+            float: left;
+            width: 25%;
+            height: 280px;
+            padding-right: 10px;
+            padding-top: 15px;
+            padding-left: 10px;
+            padding-bottom:10px;
+        }
+        .know-9 img:hover {
+            transform: scale(1.1);
+        }
+
+        .know-9 h1 {
+            color: white;
+            padding-top:10px;
+            padding-left:101px;
+        }
+
+        .know-9 img {
+            margin-top: 20px;
+            height: 35;
+            width: 35;
+            border-radius: 80px;
+
+        }
+
+        .know-9 {
+            float: left;
+            width: 25%;
+            height: 280px;
+            padding-right: 10px;
+            padding-top: 15px;
+            padding-left: 10px;
+            padding-bottom:10px;
+        }
